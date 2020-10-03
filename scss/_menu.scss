@@ -9,7 +9,7 @@
         width: 28px;
         height: 3px;
         margin-bottom: 5px;
-        background-color: #fff;
+        background-color: set-text-color($primary-color);
         @include easeOut;
     }
     &.close {
@@ -92,7 +92,7 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 600;
-        color: #fff;
+        color: set-text-color($primary-color);
         &:hover {
             color: $secondary-color;
         }
