@@ -1,0 +1,51 @@
+@include mediaSm {
+    main#home h1.lg-heading {
+        margin-top: 25vh;
+    }
+    .menu {
+        &-branding,
+        &-nav {
+            width: 100%;
+            float: none;
+            min-height: 0;
+            opacity: 1;
+            z-index: 10;
+        }
+        &-nav {
+            height: 70vh;
+            @include easeOut;
+            transform: translate3d(-600px, 0, 0);
+            &.show {
+                transform: translate3d(0, 0, 0);
+            }
+        }
+        &-branding {
+            height: 30vh;
+            @include easeOut;
+            transform: translate3d(600px, 0, 0);
+            &.show {
+                transform: translate3d(0, 0, 0);
+            }
+            .avatar {
+                background: url("./../images/portrait_small.jpg");
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+@include mediaMd {
+    main {
+        align-items: center;
+        text-align: center;
+        .lg-heading {
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@include mediaLg {}
+
+@include mediaXl {}
