@@ -1,0 +1,23 @@
+main {
+    .boxes {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+        flex-wrap: wrap;
+        align-items: center;
+        div {
+            padding: 1.5rem 2.5rem;
+            border: 2px solid #fff;
+            margin: 1rem;
+            @include easeOut();
+            &:hover {
+                background: $secondary-color;
+                padding: 0.5rem 2.5rem;
+                color: set-text-color($secondary-color);
+                span {
+                    color: set-text-color($secondary-color);
+                }
+            }
+        }
+    }
+}

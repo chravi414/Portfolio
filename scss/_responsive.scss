@@ -36,6 +36,9 @@
     .projects {
         grid-template-columns: 1fr;
     }
+    main#contact {
+        height: calc(100vh - 60px);
+    }
 }
 
 @include mediaMd {
@@ -54,12 +57,22 @@
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
+    main#contact {
+        // height: calc(100vh - 60px);
+    }
 }
 
 @include mediaLg {
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
+    main#contact {
+        height: calc(100vh - 60px);
+    }
 }
 
-@include mediaXl {}
+@include mediaXl {
+    main#contact {
+        height: calc(100vh - 60px);
+    }
+}

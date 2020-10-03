@@ -2,6 +2,7 @@
 @import "menu";
 @import "about";
 @import "work";
+@import "contact";
 * {
     box-sizing: border-box;
 }
@@ -48,7 +49,7 @@ header {
 
 main {
     padding: 0 4rem;
-    // height: 100%;
+    // height: calc(100vh - 60px);
     .icons {
         margin-top: 2rem;
         a {
