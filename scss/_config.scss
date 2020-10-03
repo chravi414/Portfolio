@@ -29,7 +29,7 @@ $bg-opacity: 0.9;
 
 // Media Queries
 @mixin mediaSm {
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 400px) {
         @content;
     }
 }

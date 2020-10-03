@@ -1,7 +1,7 @@
 @import "config";
 @import "menu";
 @import "about";
-@import "responsive";
+@import "work";
 * {
     box-sizing: border-box;
 }
@@ -66,3 +66,5 @@ main {
         }
     }
 }
+
+@import "responsive";

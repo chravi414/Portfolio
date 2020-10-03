@@ -33,6 +33,9 @@
             }
         }
     }
+    .projects {
+        grid-template-columns: 1fr;
+    }
 }
 
 @include mediaMd {
@@ -48,8 +51,15 @@
         grid-template-areas: "bioimage" "bio" "job-1" "job-2" "job-3";
         grid-template-columns: 1fr;
     }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@include mediaLg {}
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
 @include mediaXl {}
